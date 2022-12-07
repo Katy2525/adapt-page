@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adapt-page</title>
+    <style>
+        body{
+            margin: 0;
+        }
+    
+        .header__image{
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 980px;
+        }
+
+        .header__title{
+            margin: 0;
+            background-color: rgb(158, 158, 158);
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .news-section, .content{
+            max-width: 980px; 
+            margin: 0 auto;           
+        }
+
+        .news-box{
+            width: 24%;
+            min-height: 230px;
+            float: left;
+            text-align: center;
+            background-color: rgb(228, 228, 228);
+            position: relative;
+            margin: 30px 10px 60px 0; 
+        }
+
+        .news-box:last-child{
+            margin-right: 0;
+        }
+
+        .clearfix{
+            clear: both;
+        }
+
+        .news-box__content{
+            color: rgb(145, 144, 144);
+        }
+        
+        .news-box__link{
+            display: inline-block;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            background-color: #84acce;
+            text-decoration: none;
+            color: white;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            font-weight: bold;
+        }
+
+        .footer{
+            margin: 50px 0 0;
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            background-color: #84acce;
+       
+        }
+
+        .footer__content{         
+            max-width: 980px;
+            margin: 0 auto;
+            color: white;
+        }
+
+        @media (max-width: 768px){
+
+            .header__image{
+            max-width: 700px;
+        }
+
+            .news-section, .content{
+                margin: 0 8px;
+            }
+            
+            .news-box{
+                width: 100%;
+                min-height: 180px;
+                margin: 5px 0;    
+            }
+
+            .news-box:first-child{
+                margin-top: 40px;    
+            }
+
+            .news-box:last-child{
+                margin-bottom: 40px;    
+            }
+
+            .footer__content{         
+            margin-left: 8px;
+            }      
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src='game-of-thrones.jpg' class="header__image">
+        <h1 class="header__title">Игра престолов</h1>
+    </div>
+
+    
+
+   <div class="news-section">
+        <div class="news-box">
+            <h3 class="news-box__title">Зима приближается</h3>
+            <p class="news-box__content">Премьера сериала. Лорд Нед Старк обеспокоен тревожными сообщениями от дезертира Ночного Дозора; Король Роберт прибывает
+            в Винтерфелл.</p>
+            <a href="#" class="news-box__link">Читать далее</a>
+        </div>
+
+        <div class="news-box">
+            <h3 class="news-box__title">Кингсроуд</h3>
+            <p class="news-box__content">Ланнистеры замышляют обеспечить молчание Брана; Джон и Тирион направляются к Стене; Нед сталкивается с семейным кризисом
+            по пути в Королевскую Гавань.</p>
+            <a href="#" class="news-box__link">Читать далее</a>
+        </div>
+
+        <div class="news-box">
+            <h3 class="news-box__title">Лорд Сноу</h3>
+            <p class="news-box__content">Джон производит впечатление на Тириона в Черном замке; Нед сталкивается со своим прошлым и будущим в Королевской Гавани;
+            Дейенерис не в ладах с Визерисом.</p>
+            <a href="#" class="news-box__link">Читать далее</a>
+        </div>
+
+        <div class="news-box">
+            <h3 class="news-box__title">Волк и Лев</h3>
+            <p class="news-box__content">Нед отказывается от приказа короля; Тирион избегает одной опасной встречи только для того, чтобы оказаться в другой.</p>
+            <a href="#" class="news-box__link">Читать далее</a>
+        </div>
+    </div>
+
+    <div class="content clearfix">
+        <div class="content__block">
+            <h2 class="content__title">О сериале</h2>
+            <p class="content__text">Игра престолов - американский телесериал в жанре фэнтези, основанный на цикле романов «Песнь льда и огня» Джорджа Р. Р. Мартина. Снят под
+            руководством Дэвида Бениоффа и Д. Б. Уайсса для кабельного телеканала HBO. Съёмки велись в нескольких странах, включая
+            Великобританию (Северная Ирландия), Мальту, Хорватию, Исландию и Марокко. Премьера первого сезона в США состоялась 17
+            апреля 2011 года, последняя серия финального сезона демонстрировалась 19 мая 2019 года.</p>
+        </div>
+
+        <div class="content__block">
+            <h2 class="content__title">Подготовка к съёмкам</h2>
+            <p class="content__text">Сценаристами и исполнительными продюсерами проекта, помимо самого Мартина, стали Дэвид Бениофф и Д. Б. Уайсс. Предполагалось, что они будут сценаристами всех эпизодов, кроме одного в каждом сезоне, сценарий которого пишет сам
+            Мартин. Однако в дальнейшем к команде сценаристов присоединились Джейн Эспенсон и Брайен Когмен, написавшие по
+            одному сценарию для первого сезона.</p>
+        </div>
+
+        <div class="content__block">
+            <h2 class="content__title">Особенности проекта</h2>
+            <p class="content__text">Дэвид Бениофф охарактеризовал «Игру престолов» как «Клан Сопрано в Средиземье», подчёркивая общую тёмную атмосферу
+            сериала и хитросплетение сложных интриг, в которых элемент фэнтези — скорее дополнение. Представитель руководства
+            HBO Майкл Ломбардо считает, что сама история привлекательнее, чем магия или экзотическая обстановка.</p>
+        </div>
+
+        <div class="content__block">
+            <h2 class="content__title">Сюжет</h2>
+            <p class="content__text">Действие разворачивается на фоне политических интриг, которые привели к гражданской войне за власть над политическим
+            образованием Семь Королевств на континенте Вестерос.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="footer__content">&copy Копирайт 2022</p>
+    </div>
+</body>
+</html>
